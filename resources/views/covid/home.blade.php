@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('container')
+    <info-component>
+
+    </info-component>
+    
     <home-component>
 
     </home-component>
@@ -14,6 +18,6 @@
     </search-component>
 
     <allcountries-component>
-        
+
     </allcountries-component>
 @endsection
