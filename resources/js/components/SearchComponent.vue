@@ -117,6 +117,7 @@ export default {
   },
   methods: {
       searchCountry() {
+          
         this.search = true,
         console.log("Ola");
 
