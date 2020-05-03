@@ -14,8 +14,8 @@
         <input class="input" type="text" placeholder="Ex: Portugal" v-model="country">
     </div>
     <div class="control">
-        <button class="button is-info" @click="searchCountry()">
-        Procurar
+        <button class="button is-info" @click="searchCountry()" v-text="text">
+
         </button>
     </div>
     </div>
@@ -103,7 +103,8 @@ export default {
       search: false,
       stats: [],
       errors: [],
-      url: ''
+      url: '',
+      text: 'Pesquisar'
     };
   },
   mounted() {
@@ -128,8 +129,8 @@ export default {
                 this.errors.push(e)
             }),
         this.search = true
-
-      },
+        this.text == "Pesquisar" ? this.text = "Limpar" : this.text = "Pesquisar"
+      }
   }
 };
 </script>

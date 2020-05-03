@@ -2411,7 +2411,8 @@ __webpack_require__.r(__webpack_exports__);
       search: false,
       stats: [],
       errors: [],
-      url: ''
+      url: '',
+      text: 'Pesquisar'
     };
   },
   mounted: function mounted() {
@@ -2434,6 +2435,7 @@ __webpack_require__.r(__webpack_exports__);
       })["catch"](function (e) {
         _this.errors.push(e);
       }), this.search = true;
+      this.text == "Pesquisar" ? this.text = "Limpar" : this.text = "Pesquisar";
     }
   }
 });
@@ -38538,18 +38540,15 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "control" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button is-info",
-                on: {
-                  click: function($event) {
-                    return _vm.searchCountry()
-                  }
+            _c("button", {
+              staticClass: "button is-info",
+              domProps: { textContent: _vm._s(_vm.text) },
+              on: {
+                click: function($event) {
+                  return _vm.searchCountry()
                 }
-              },
-              [_vm._v("\n        Procurar\n        ")]
-            )
+              }
+            })
           ])
         ])
       ])
