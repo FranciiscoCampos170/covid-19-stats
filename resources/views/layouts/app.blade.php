@@ -24,6 +24,9 @@
             </div>
         </div>
 
+        <footer class="footer fix-footer">
+        
+        </footer>
         <script src="{{ asset('/js/app.js') }}"></script>
     </body>
 </html>

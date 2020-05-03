@@ -2435,7 +2435,15 @@ __webpack_require__.r(__webpack_exports__);
       })["catch"](function (e) {
         _this.errors.push(e);
       }), this.search = true;
-      this.text == "Pesquisar" ? this.text = "Limpar" : this.text = "Pesquisar";
+
+      if (this.text == "Pesquisar") {
+        this.text = "Limpar";
+        this.search = true;
+      } else {
+        this.text = "Pesquisar";
+        this.search = false;
+        this.country = '';
+      }
     }
   }
 });
@@ -38526,7 +38534,11 @@ var render = function() {
                 }
               ],
               staticClass: "input",
-              attrs: { type: "text", placeholder: "Ex: Portugal" },
+              attrs: {
+                required: "",
+                type: "text",
+                placeholder: "Ex: Portugal"
+              },
               domProps: { value: _vm.country },
               on: {
                 input: function($event) {

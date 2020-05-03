@@ -11,7 +11,7 @@
     <div class="level-item">
         <div class="field has-addons">
     <div class="control">
-        <input class="input" type="text" placeholder="Ex: Portugal" v-model="country">
+        <input class="input" required type="text" placeholder="Ex: Portugal" v-model="country">
     </div>
     <div class="control">
         <button class="button is-info" @click="searchCountry()" v-text="text">
@@ -129,7 +129,15 @@ export default {
                 this.errors.push(e)
             }),
         this.search = true
-        this.text == "Pesquisar" ? this.text = "Limpar" : this.text = "Pesquisar"
+
+        if(this.text == "Pesquisar"){
+            this.text = "Limpar"
+            this.search = true
+        }else{
+            this.text = "Pesquisar"
+            this.search = false
+            this.country = ''
+        }
       }
   }
 };
