@@ -14,7 +14,8 @@ class ComponentController extends Controller
     public function index()
     {
         //return "Hello Word";
-        return collect("https://corona.lmao.ninja/v2/countries/Angola")->toJson();
+        //return collect("https://corona.lmao.ninja/v2/all")->toJson();
+        return view('covid.home');
     }
 
     /**
