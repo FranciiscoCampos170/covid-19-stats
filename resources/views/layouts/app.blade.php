@@ -13,9 +13,11 @@
         <div class="flex-center position-ref full-height">
 
 
-            <div class="content">
-                
+            <div class="content" id="app">
+                @yield('container')
             </div>
         </div>
+
+        <script src="{{ asset('/js/app.js') }}"></script>
     </body>
 </html>
