@@ -25,8 +25,9 @@
         </div>
 
         <footer class="footer fix-footer">
-        
+
         </footer>
         <script src="{{ asset('/js/app.js') }}"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </body>
 </html>

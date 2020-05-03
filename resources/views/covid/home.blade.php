@@ -10,6 +10,10 @@
     </angola-component>
 
     <search-component>
-        
+
     </search-component>
+
+    <allcountries-component>
+        
+    </allcountries-component>
 @endsection
