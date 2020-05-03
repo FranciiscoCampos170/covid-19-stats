@@ -14,8 +14,8 @@
         <input class="input" required type="text" placeholder="Ex: Portugal" v-model="country">
     </div>
     <div class="control">
-        <button class="button is-info" @click="searchCountry()" v-text="text">
-
+        <button class="button is-info" @click="searchCountry()">
+            Pesquisar
         </button>
     </div>
     </div>
@@ -130,14 +130,6 @@ export default {
             }),
         this.search = true
 
-        if(this.text == "Pesquisar"){
-            this.text = "Limpar"
-            this.search = true
-        }else{
-            this.text = "Pesquisar"
-            this.search = false
-            this.country = ''
-        }
       }
   }
 };
