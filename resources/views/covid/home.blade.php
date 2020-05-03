@@ -6,6 +6,10 @@
     </home-component>
 
     <angola-component>
-        
+
     </angola-component>
+
+    <search-component>
+        
+    </search-component>
 @endsection
