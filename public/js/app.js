@@ -1941,15 +1941,29 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      msg: "Ola Mundo!"
+      stats: [],
+      errors: [],
+      url: "https://corona.lmao.ninja/v2/all"
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(this.url).then(function (response) {
+      _this.stats = response.data;
+    })["catch"](function (e) {
+      _this.errors.push(e);
+    });
   }
 });
 
@@ -37646,7 +37660,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v(_vm._s(_vm.msg))])
+  return _c("h1", [_vm._v(_vm._s(_vm.stats))])
 }
 var staticRenderFns = []
 render._withStripped = true
