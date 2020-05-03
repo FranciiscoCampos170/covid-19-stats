@@ -1,6 +1,6 @@
 # covid-19 Stats
 
-A web application to display Coronavirus Diseases (COVID19) statistics from different countries. [Check Live Demo](https://richardkeep.dev/)
+A web application to display Coronavirus Diseases (COVID19) statistics from different countries. [Check Live Demo](https://quiet-wave-37742.herokuapp.com/)
 
 ## Installation
 - Clone the repo `https://github.com/FranciiscoCampos170/covid-19-stats.git`
