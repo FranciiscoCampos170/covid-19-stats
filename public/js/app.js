@@ -1990,6 +1990,107 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -37705,62 +37806,171 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h3", [_vm._v("Global")]),
+    _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "columns" }, [
       _c("div", { staticClass: "column" }, [
-        _c("p", [_vm._v(_vm._s(_vm.stats.todayCases.toFixed()))]),
-        _vm._v(" "),
-        _c("p", [_vm._v("Casos de Hoje")])
+        _c("div", { staticClass: "box" }, [
+          _c("article", { staticClass: "media" }, [
+            _c("div", { staticClass: "media-content" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("p", { staticClass: "has-text-centered" }, [
+                  _c("strong", [_vm._v(_vm._s(_vm.stats.todayCases))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v("\n                Casos de Hoje\n                ")
+                ])
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column" }, [
-        _c("p", [_vm._v(_vm._s(_vm.stats.todayDeaths))]),
-        _vm._v(" "),
-        _c("p", [_vm._v("Mortes de Hoje")])
+        _c("div", { staticClass: "box" }, [
+          _c("article", { staticClass: "media" }, [
+            _c("div", { staticClass: "media-content" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("p", { staticClass: "has-text-centered" }, [
+                  _c("strong", [_vm._v(_vm._s(_vm.stats.todayDeaths))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v("\n                Mortes de Hoje\n                ")
+                ])
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column" }, [
-        _c("p", [_vm._v(_vm._s(_vm.stats.cases))]),
-        _vm._v(" "),
-        _c("p", [_vm._v("Total de Casos")])
+        _c("div", { staticClass: "box" }, [
+          _c("article", { staticClass: "media" }, [
+            _c("div", { staticClass: "media-content" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("p", { staticClass: "has-text-centered" }, [
+                  _c("strong", [_vm._v(_vm._s(_vm.stats.cases))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v("\n                Total de Casos\n                ")
+                ])
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column" }, [
-        _c("p", [_vm._v(_vm._s(_vm.stats.deaths))]),
-        _vm._v(" "),
-        _c("p", [_vm._v("Total de Mortes")])
+        _c("div", { staticClass: "box" }, [
+          _c("article", { staticClass: "media" }, [
+            _c("div", { staticClass: "media-content" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("p", { staticClass: "has-text-centered" }, [
+                  _c("strong", [_vm._v(_vm._s(_vm.stats.deaths))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v("\n                Total de Mortes\n                ")
+                ])
+              ])
+            ])
+          ])
+        ])
       ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "columns" }, [
       _c("div", { staticClass: "column" }, [
-        _c("p", [_vm._v(_vm._s(_vm.stats.active))]),
-        _vm._v(" "),
-        _c("p", [_vm._v("Total Casos de Activos")])
+        _c("div", { staticClass: "box" }, [
+          _c("article", { staticClass: "media" }, [
+            _c("div", { staticClass: "media-content" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("p", { staticClass: "has-text-centered" }, [
+                  _c("strong", [_vm._v(_vm._s(_vm.stats.active))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(
+                    "\n                Total Casos de Activos\n                "
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column" }, [
-        _c("p", [_vm._v(_vm._s(_vm.stats.critical))]),
-        _vm._v(" "),
-        _c("p", [_vm._v("Total Estado Crítico")])
+        _c("div", { staticClass: "box" }, [
+          _c("article", { staticClass: "media" }, [
+            _c("div", { staticClass: "media-content" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("p", { staticClass: "has-text-centered" }, [
+                  _c("strong", [_vm._v(_vm._s(_vm.stats.critical))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(
+                    "\n                Total Estado Crítico\n                "
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column" }, [
-        _c("p", [_vm._v(_vm._s(_vm.stats.recovered))]),
-        _vm._v(" "),
-        _c("p", [_vm._v("Total de Recuperados")])
+        _c("div", { staticClass: "box" }, [
+          _c("article", { staticClass: "media" }, [
+            _c("div", { staticClass: "media-content" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("p", { staticClass: "has-text-centered" }, [
+                  _c("strong", [_vm._v(_vm._s(_vm.stats.recovered))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(
+                    "\n                Total de Recuperados\n                "
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column" }, [
-        _c("p", [_vm._v(_vm._s(_vm.stats.tests))]),
-        _vm._v(" "),
-        _c("p", [_vm._v("Total de Testes Feitos")])
+        _c("div", { staticClass: "box" }, [
+          _c("article", { staticClass: "media" }, [
+            _c("div", { staticClass: "media-content" }, [
+              _c("div", { staticClass: "content" }, [
+                _c("p", { staticClass: "has-text-centered" }, [
+                  _c("strong", [_vm._v(_vm._s(_vm.stats.tests))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(
+                    "\n                Total de Testes Feitos\n                "
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
       ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "level" }, [
+      _c("div", { staticClass: "level-item" }, [
+        _c("br"),
+        _vm._v(" "),
+        _c("h3", { staticClass: "heading" }, [_vm._v("Global")])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 

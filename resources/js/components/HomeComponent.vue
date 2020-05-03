@@ -1,46 +1,147 @@
 <template>
 <div>
+<div class="level">
+    <div class="level-item">
+        <br>
+    <h3 class="heading">Global</h3>
+    </div>
+</div>
 
-
-
-<h3>Global</h3>
   <div class="columns">
       <div class="column">
-          <p>{{ stats.todayCases.toFixed() }}</p>
-          <p>Casos de Hoje</p>
+          <div class="box">
+        <article class="media">
+            <div class="media-content">
+            <div class="content">
+                <p class="has-text-centered">
+                <strong>{{ stats.todayCases }}</strong>
+                <br>
+                Casos de Hoje
+                </p>
+            </div>
+            </div>
+        </article>
+        </div>
       </div>
+
+        <div class="column">
+          <div class="box">
+        <article class="media">
+            <div class="media-content">
+            <div class="content">
+                <p class="has-text-centered">
+                <strong>{{stats.todayDeaths}}</strong>
+                <br>
+                Mortes de Hoje
+                </p>
+            </div>
+            </div>
+        </article>
+        </div>
+      </div>
+
       <div class="column">
-          <p>{{stats.todayDeaths}}</p>
-          <p>Mortes de Hoje</p>
+          <div class="box">
+        <article class="media">
+            <div class="media-content">
+            <div class="content">
+                <p class="has-text-centered">
+                <strong>{{stats.cases}}</strong>
+                <br>
+                Total de Casos
+                </p>
+            </div>
+            </div>
+        </article>
+        </div>
       </div>
+
       <div class="column">
-          <p>{{stats.cases}}</p>
-          <p>Total de Casos</p>
+          <div class="box">
+        <article class="media">
+            <div class="media-content">
+            <div class="content">
+                <p class="has-text-centered">
+                <strong>{{stats.deaths}}</strong>
+                <br>
+                Total de Mortes
+                </p>
+            </div>
+            </div>
+        </article>
+        </div>
       </div>
-      <div class="column">
-          <p>{{stats.deaths}}</p>
-          <p>Total de Mortes</p>
-      </div>
+
   </div>
 
 <div class="columns">
-  <div class="column">
-          <p>{{ stats.active }}</p>
-          <p>Total Casos de Activos</p>
+    <div class="column">
+          <div class="box">
+        <article class="media">
+            <div class="media-content">
+            <div class="content">
+                <p class="has-text-centered">
+                <strong>{{ stats.active }}</strong>
+                <br>
+                Total Casos de Activos
+                </p>
+            </div>
+            </div>
+        </article>
+        </div>
       </div>
+
       <div class="column">
-          <p>{{ stats.critical }}</p>
-          <p>Total Estado Crítico</p>
+          <div class="box">
+        <article class="media">
+            <div class="media-content">
+            <div class="content">
+                <p class="has-text-centered">
+                <strong>{{ stats.critical }}</strong>
+                <br>
+                Total Estado Crítico
+                </p>
+            </div>
+            </div>
+        </article>
+        </div>
       </div>
+
       <div class="column">
-          <p>{{ stats.recovered }}</p>
-          <p>Total de Recuperados</p>
+          <div class="box">
+        <article class="media">
+            <div class="media-content">
+            <div class="content">
+                <p class="has-text-centered">
+                <strong>{{ stats.recovered }}</strong>
+                <br>
+                Total de Recuperados
+                </p>
+            </div>
+            </div>
+        </article>
+        </div>
       </div>
+
       <div class="column">
-          <p>{{ stats.tests }}</p>
-          <p>Total de Testes Feitos</p>
+          <div class="box">
+        <article class="media">
+            <div class="media-content">
+            <div class="content">
+                <p class="has-text-centered">
+                <strong>{{ stats.tests }}</strong>
+                <br>
+                Total de Testes Feitos
+                </p>
+            </div>
+            </div>
+        </article>
+        </div>
       </div>
+
   </div>
+
+
 
 </div>
 </template>
