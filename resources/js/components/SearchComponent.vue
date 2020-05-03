@@ -11,7 +11,7 @@
     <div class="level-item">
         <div class="field has-addons">
     <div class="control">
-        <input class="input" type="text" placeholder="Ex: Portugal">
+        <input class="input" type="text" placeholder="Ex: Portugal" v-model="country">
     </div>
     <div class="control">
         <button class="button is-info" @click="searchCountry()">
@@ -99,29 +99,37 @@ import axios  from 'axios';
 export default {
   data() {
     return {
+    country: '',
       search: false,
       stats: [],
       errors: [],
-      url: "https://corona.lmao.ninja/v2/countries/Angola"
+      url: ''
     };
   },
   mounted() {
-      axios.get(this.url)
+      /*axios.get(this.url)
       .then(response => {
           this.stats = response.data
           console.log(this.stats);
 
       }).catch(e => {
           this.errors.push(e)
-      })
+      })*/
   },
   methods: {
       searchCountry() {
-          
-        this.search = true,
-        console.log("Ola");
+          this.url = "https://corona.lmao.ninja/v2/countries/"+this.country
+          axios.get(this.url)
+            .then(response => {
+                this.stats = response.data
+                console.log(this.stats);
 
-      }
+            }).catch(e => {
+                this.errors.push(e)
+            }),
+        this.search = true
+
+      },
   }
 };
 </script>

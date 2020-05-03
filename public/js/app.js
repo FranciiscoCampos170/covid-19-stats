@@ -2407,25 +2407,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
+      country: '',
       search: false,
       stats: [],
       errors: [],
-      url: "https://corona.lmao.ninja/v2/countries/Angola"
+      url: ''
     };
   },
   mounted: function mounted() {
-    var _this = this;
-
-    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(this.url).then(function (response) {
-      _this.stats = response.data;
-      console.log(_this.stats);
-    })["catch"](function (e) {
-      _this.errors.push(e);
-    });
+    /*axios.get(this.url)
+    .then(response => {
+        this.stats = response.data
+        console.log(this.stats);
+     }).catch(e => {
+        this.errors.push(e)
+    })*/
   },
   methods: {
     searchCountry: function searchCountry() {
-      this.search = true, console.log("Ola");
+      var _this = this;
+
+      this.url = "https://corona.lmao.ninja/v2/countries/" + this.country;
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(this.url).then(function (response) {
+        _this.stats = response.data;
+        console.log(_this.stats);
+      })["catch"](function (e) {
+        _this.errors.push(e);
+      }), this.search = true;
     }
   }
 });
@@ -38505,7 +38513,29 @@ var render = function() {
     _c("div", { staticClass: "level" }, [
       _c("div", { staticClass: "level-item" }, [
         _c("div", { staticClass: "field has-addons" }, [
-          _vm._m(1),
+          _c("div", { staticClass: "control" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.country,
+                  expression: "country"
+                }
+              ],
+              staticClass: "input",
+              attrs: { type: "text", placeholder: "Ex: Portugal" },
+              domProps: { value: _vm.country },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.country = $event.target.value
+                }
+              }
+            })
+          ]),
           _vm._v(" "),
           _c("div", { staticClass: "control" }, [
             _c(
@@ -38615,17 +38645,6 @@ var staticRenderFns = [
       _c("div", { staticClass: "level-item" }, [
         _c("h5", { staticClass: "heading" }, [_vm._v("Procure por um País")])
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "control" }, [
-      _c("input", {
-        staticClass: "input",
-        attrs: { type: "text", placeholder: "Ex: Portugal" }
-      })
     ])
   }
 ]
