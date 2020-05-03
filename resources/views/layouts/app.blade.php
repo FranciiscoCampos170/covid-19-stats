@@ -7,7 +7,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
         <title>Laravel</title>
-
+        <style>
+            body{
+                background-color: #F7FAFC;
+            }
+        </style>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>

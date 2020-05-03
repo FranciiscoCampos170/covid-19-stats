@@ -1947,6 +1947,49 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1961,6 +2004,7 @@ __webpack_require__.r(__webpack_exports__);
 
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(this.url).then(function (response) {
       _this.stats = response.data;
+      console.log(_this.stats);
     })["catch"](function (e) {
       _this.errors.push(e);
     });
@@ -37660,7 +37704,61 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v(_vm._s(_vm.stats))])
+  return _c("div", [
+    _c("h3", [_vm._v("Global")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "columns" }, [
+      _c("div", { staticClass: "column" }, [
+        _c("p", [_vm._v(_vm._s(_vm.stats.todayCases.toFixed()))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Casos de Hoje")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("p", [_vm._v(_vm._s(_vm.stats.todayDeaths))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Mortes de Hoje")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("p", [_vm._v(_vm._s(_vm.stats.cases))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Total de Casos")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("p", [_vm._v(_vm._s(_vm.stats.deaths))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Total de Mortes")])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "columns" }, [
+      _c("div", { staticClass: "column" }, [
+        _c("p", [_vm._v(_vm._s(_vm.stats.active))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Total Casos de Activos")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("p", [_vm._v(_vm._s(_vm.stats.critical))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Total Estado Crítico")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("p", [_vm._v(_vm._s(_vm.stats.recovered))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Total de Recuperados")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("p", [_vm._v(_vm._s(_vm.stats.tests))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Total de Testes Feitos")])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
