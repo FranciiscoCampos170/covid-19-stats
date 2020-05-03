@@ -4,4 +4,8 @@
     <home-component>
 
     </home-component>
+
+    <angola-component>
+        
+    </angola-component>
 @endsection
